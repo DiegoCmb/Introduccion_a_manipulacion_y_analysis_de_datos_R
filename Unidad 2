@@ -1,0 +1,72 @@
+## Que es una base de datos
+
+Es la colección de información organizada que puede ser facilmente consultada, manipulada, y actualizada
+
+Las bases de datos estan organizadas en filas, columnas y tablas y suele utilizarse la indexación para hacer el acceso fácil de información relevante. 
+
+### ***Tipos de bases de datos***:
+
+
+***Flat database***
+
+Simple database Información de diferente tipo contenida en campos (fields) en columnas  y registos (records) que estan en las filas 
+y son guardados en files
+
+Los campos pueden ser de 6 tipos diferentes:
+texto
+numeros
+fechas
+tiempo
+graficos
+calculos
+
+En una base de datos se puede buscar información especifica, puede ser reordenada 
+
+https://searchsqlserver.techtarget.com/definition/database
+
+***Relational database***:
+base de datos tabular a partir de la cual la información puede ser consultada y reorganizada de varias maneras. 
+
+
+Estas bases contienen tablas con datos que se ajustan a una caegoria predefinida. Cada tabla tiene al menos una columna categorica 
+y cada fila tiene un valor para la categoria definida por la columna. De esta manera se pueden ir añadiendo nuevas categorias (columnas) a 
+la base original sin modificar la información previa
+
+
+SQL es Structured Query Language, es tanto un estandar como un programa que sirve como interface para bases de datos relacionales. 
+
+***Distributed database***
+
+la información se encuentra almacenada en diferentes ubicaciones fisicas y el procesamiento de esta información también se hace de manera dispersa
+en varios puntos de la red. 
+
+Bases homogeneas: tienen el mismo tipo de hardwareq que corre el mismo sistema operativoy aplicaciones de base de datos
+Bases heterogeneas: tienen diferentes tipos de hardware ...
+
+***Cloud database***
+
+Son bases de datos optimizadas para un ambiente virtual en la nube informatica. Esto permite pagar por almacenaje y ancho de banda favoreciendo 
+escalabilidad en función de la demanda del procesamiento y otras necesidades. 
+
+***NoSQL database***
+Eficientes en almacenaje de mucha información ya organizada
+
+***Object-oriented database***
+Guarda objetos por ejemplo, un video multimedia puede ser definido como un objeto a diferencia de un valor alfanumerico. 
+
+*** Graph database***
+
+Guarda objetos graficos como mapas y suelen contener redes de informacion 
+
+
+# Como diseñar una base de datos óptima para R
+
+
+
+
+# Cargando y salvando datos en R
+
+
+
+
+

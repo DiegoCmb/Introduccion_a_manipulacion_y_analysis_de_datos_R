@@ -1,0 +1,127 @@
+---
+title: "Unidad 2.1."
+author: "Diego Carmona"
+date: "January 14, 2019"
+output: ioslides_presentation
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+## ¿Qué es una base de datos?
+
+Es la colección de información estructurada que puede ser facilmente consultada, manipulada, y actualizada
+
+Las bases de datos estan organizadas en filas, columnas, y tablas y suele utilizarse la indexación para facilitar el acceso a la información relevante. 
+
+<img src="/home/diego/Dropbox/cursos/Introduccion_a_manipulacion_y_analysis_de_datos_R/Unidad_2/figuras unidad_2/indexacion.png" alt="drawing" width="700" align = "left"/>
+
+
+
+## Tipos de bases de datos
+
+- Flat database
+- Relational database
+- Distributed database
+- Cloud database
+- NoSql database
+- Object-oriented database (ej. Graph database)
+
+## Tipos de bases de datos
+
+- **Flat database**  
+- **Relational database** 
+- Distributed database
+- Cloud database
+- NoSql database
+- Object-oriented database (ej. Graph database)
+
+
+## Flat database
+
+Base sencilla que guarda toda la información en una sola tabla o lista.
+
+* <font size="4"> Puede contener varios campos.</font>
+* <font size="4"> Proclive a tener datos duplicados.</font>
+* <font size="4"> Para juntar dos flat files necesitas copiar info de A a B.</font>
+* <font size="4"> No hay automatización entre flat files. Un cambio en A no afecta a B.</font>
+* <font size="4"> Ofrecen funcionalidad en el almacenaje, manipulación, y acceso de información.</font>
+
+<img src="/home/diego/Dropbox/cursos/Introduccion_a_manipulacion_y_analysis_de_datos_R/Unidad_2/figuras unidad_2/Flat database.png" alt="drawing" width="400" align = "left"/>
+
+
+
+## Relational database
+
+Incorpora multiples tablas con métodos informáticos. 
+
+* <font size="4"> Puede contener varios campos como las flat database.</font>
+* <font size="4"> Resuelve el problema de tener datos duplicados por observación.</font>
+* <font size="4"> La base A y B interactuan por lo que no necesitas copiar A en B.</font>
+* <font size="4"> Puede haber automatización entre databases.</font>
+* <font size="4"> Almacena, manipula, y accede a información MUCHO mas comleja y de manera eficiente.</font>
+* <font size="4"> Al ingresar nueva información o modificar una base de datos se debe considerar la compatibilidad con las otras bases.</font>
+
+
+<img src="/home/diego/Dropbox/cursos/Introduccion_a_manipulacion_y_analysis_de_datos_R/Unidad_2/figuras unidad_2/relational database R.png" alt="drawing" width="400" align = "left"/>
+
+## Tipos de database relevantes para nosotros
+
+
+<img src="/home/diego/Dropbox/cursos/Introduccion_a_manipulacion_y_analysis_de_datos_R/Unidad_2/figuras unidad_2/Kind of database.png" alt="drawing" width="700" align = "left"/>
+
+
+http://www.databasedev.co.uk/flatfile-vs-rdbms.html
+
+
+
+## Organización básica de datos.
+
+* <font size="4"> Estructura general, objeto 2-d (i.e. filas y columnas)</font>
+* <font size="4"> Estructura de bases de datos erróneas siguen diseños de tablas presentadas en publicaciones, o tratan de evitar redundancia de datos.</font>
+
+<img src="/home/diego/Dropbox/cursos/Introduccion_a_manipulacion_y_analysis_de_datos_R/Unidad_2/figuras unidad_2/Estructura erronea de bases de datos.png" alt="drawing" width="650" align = "center"/>
+
+---
+**El problema general surge cuando la información para una observación particular se encuentra en multiples filas.**
+
+<font size="4">**Solución: la forma mas general y flexible de guardar datos en tablas es asegurándonos que cada fila tenga todo los datos necesarios para interpretar esa fila.**</font>
+
+
+<img src="/home/diego/Dropbox/cursos/Introduccion_a_manipulacion_y_analysis_de_datos_R/Unidad_2/figuras unidad_2/bases de datos optimas.png" alt="drawing" width="620" align="center"/>
+
+## Hojas de cálculo (Spreadsheets)
+
+**Falta de higiene en el uso de hojas de cálculo afecta análisis de datos.**
+
+<img src="/home/diego/Dropbox/cursos/Introduccion_a_manipulacion_y_analysis_de_datos_R/Unidad_2/figuras unidad_2/1200px-LibreOffice_5.1_Calc_(Tango).png" alt="drawing" width="600" align="center"/>
+
+## Recomendaciones
+* <font size="4"> Celdas deben contener valores crudos. </font>
+* <font size="4"> No hagas cálculos o conversiones antes de meter los datos. </font>
+* <font size="4"> Usa la hoja de cálculo para hacer estas conversiones pero manten tus datos lo menos procesados posible. </font>
+* <font size="4"> No metas valores directos a las formulas, en cambio usa valores que estan asociados a las celdas. </font>
+* <font size="4"> Esto ahorra tiempo y favorece reproducibilidad. </font>
+* <font size="4"> **Al crear tu base de datos en la hoja de calculo hazlo pensando en R.** </font>
+
+
+## Hoja de Cálculo y R
+
+
+
+
+
+
+
+
+
+
+
+
+## Slide with Plot
+
+```{r pressure}
+plot(pressure)
+```
+
